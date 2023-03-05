@@ -1,0 +1,157 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5% /* 1rem == 10px */
+}
+
+
+/* GERAL */
+@font-face {
+    font-family: "Melted";
+    src: url("./fonts/Melted\ Monster.ttf") format("opentype");
+}
+
+.container-geral{
+    max-width: 90%;
+    width: 100%; /* caso use inherit em width de algum filho, provavelmente não vai funcionar */ 
+    margin: 0 auto;
+}
+
+.fundo-roxo{
+    background-image: url("./images/marca-texto-roxo.svg");
+    background-position: center;
+    background-size: cover;
+    text-shadow: none;
+}
+
+
+/* MAIN */
+main{
+    background-image: linear-gradient(45deg, #1a3742, #20798B);
+}
+
+.mascara-main{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container-banner{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.caveira-area{
+    max-width: 45%;
+    width: 100%;
+    height: 100%;       
+    display: flex;
+}
+
+.caveira-area img{
+    width: 100%;
+    height: auto;
+    transform: rotateY(180deg);
+    object-fit: contain;
+}
+
+.textos-banner-area{
+    flex: 1;
+    height: 100%;
+}
+
+.textos-banner-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.titulo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #2d0b41;
+    margin-top: 4rem;
+}
+
+.poca-letras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 50rem;
+    height: 12rem;
+    background-image: url("./images/fundo-tinta-dentista.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.8rem;
+} 
+
+.prim-linha-titulo{
+    font-family: "Melted";
+    /*
+    background-image: linear-gradient(180deg,#E90072 , 50% ,#2d0b41 70%);
+    background-clip: text;
+    -webkit-background-clip: text;*/
+    color: #2d0b41;
+}
+
+.segun-linha-titulo{
+    font-family: "Melted";
+   /* background-image: linear-gradient(180deg,#E90072 , 50% ,#2d0b41 70%);
+    background-clip: text;
+    -webkit-background-clip: text;*/
+    color: #2d0b41;
+}
+
+.desc-principal{
+    margin: 8rem 0 2rem 0; 
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+    line-height: 2.5rem;
+}
+
+.form{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    width: 50rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px solid #888;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+}
+
+.form button{
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    background-image: linear-gradient(45deg, #7B2CAB,20% , #2d0b41);
+    padding: 1.2rem 0;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
